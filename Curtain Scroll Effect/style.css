@@ -1,0 +1,49 @@
+.main {
+    height: 400vh;
+  }
+  
+  .box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .curtain {
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    background-color: black;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    right: 0;
+  }
+  
+  h2 {
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  div.left h2 {
+    left: 0;
+    clip-path: inset(0px 50% 0px 0px); 
+  }
+  
+  div.right h2 {  
+    left: -100%;
+    clip-path: inset(0px 0px 0px 50%);
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
